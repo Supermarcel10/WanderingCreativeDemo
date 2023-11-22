@@ -4,7 +4,6 @@ import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
 from flask import Flask, redirect, render_template, request, url_for
-from werkzeug.security import check_password_hash, generate_password_hash
 
 load_dotenv()
 
@@ -98,5 +97,6 @@ def login():
 
     return render_template("login.html")
 
+
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=5000)
