@@ -1,18 +1,27 @@
+{% include 'nav.html' %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login - Creative Job Portal</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="POST" action="/login">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <section class="login-form">
+            <h2>Login to Your Account</h2>
+            <form method="POST" action="/login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2023 Creative Job Portal</p>
+        </footer>
+    </div>
 </body>
 </html>
