@@ -58,6 +58,7 @@ def signup():
 
     return render_template("signup.html")
 
+
 @app.route("/portfolio", methods=["GET", "POST"])
 def portfolio():
     global username
@@ -73,6 +74,7 @@ def portfolio():
     else:
         n_vals = len(os.listdir('static/work_images'))
         return render_template("portfolio.html", n_images=n_vals)
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

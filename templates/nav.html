@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <title>Navigation Bar</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #284B63, #3C6E71);
-        }
         .navbar {
             overflow: hidden;
+            height: 50px;
             background-color: #353535;
         }
         .navbar a {
@@ -27,20 +23,25 @@
             background-color: #ddd;
             color: black;
         }
-        .navbar a.active {
+        .navbar a:active {
             background-color: #3C6E71;
             color: white;
+        }
+        .navbar img {
+            float: left;
+            height: 25px;
+            aspect-ratio: 1 / 1;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="/"><b>Logo</b></a>
+        <a href="/"><img src="/static/img/logo.jpeg" alt=""/></a>
         <a href="/signup" class="right">Signup</a>
         <a href="/login" class="right">Login</a>
-        <a href="#option3" class="right">Option 3</a>
-        <a href="#option2" class="right">Option 2</a>
-        <a href="#option1" class="right">Option 1</a>
+        <a href="/portfolio" class="right">Portfolio</a>
+{#        <a href="#option2" class="right">Option 2</a>#}
+{#        <a href="#option1" class="right">Option 1</a>#}
     </div>
 </body>
 </html>
